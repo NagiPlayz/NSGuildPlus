@@ -1,0 +1,21 @@
+filler: GRAY_STAINED_GLASS_PANE
+sounds:
+  click: UI_BUTTON_CLICK
+  page: ITEM_BOOK_PAGE_TURN
+  error: ENTITY_VILLAGER_NO
+size: 36
+content-start: 0
+per-page: 27
+items:
+  prev:
+    slot: 27
+    material: ARROW
+  back:
+    slot: 31
+    material: CREEPER_BANNER_PATTERN
+  next:
+    slot: 35
+    material: ARROW
+  guild:
+    slot: 0
+    material: WHITE_BANNER

@@ -1,0 +1,7 @@
+filler: GRAY_STAINED_GLASS_PANE
+sounds:
+  click: UI_BUTTON_CLICK
+  page: ITEM_BOOK_PAGE_TURN
+  error: ENTITY_VILLAGER_NO
+rows: 4
+items:

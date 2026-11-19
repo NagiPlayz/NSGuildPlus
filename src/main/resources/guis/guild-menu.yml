@@ -1,0 +1,34 @@
+filler: GRAY_STAINED_GLASS_PANE
+sounds:
+  click: UI_BUTTON_CLICK
+  page: ITEM_BOOK_PAGE_TURN
+  error: ENTITY_VILLAGER_NO
+size: 27
+items:
+  members:
+    slot: 2
+    material: LIME_BANNER
+  hideout:
+    slot: 4
+    material: RED_BED
+  enderchest:
+    slot: 6
+    material: ENDER_CHEST
+  shop:
+    slot: 11
+    material: GOLD_INGOT
+  stats:
+    slot: 13
+    material: CLOCK
+  allies:
+    slot: 15
+    material: IRON_SWORD
+  invites:
+    slot: 20
+    material: CHEST
+  settings:
+    slot: 22
+    material: CRAFTING_TABLE
+  leave:
+    slot: 24
+    material: OAK_DOOR

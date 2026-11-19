@@ -1,0 +1,26 @@
+name: NSGuildPlus
+version: '1.0'
+main: com.nagistudios.nsguildplus.NSGuildPlus
+api-version: '1.20'
+authors: [NagiStudios]
+description: Guild plugin with Captain, Vice Captain, Officer and Member roles, Hideouts, Shop, Stats and Allies.
+softdepend: [Vault, PlaceholderAPI]
+commands:
+  guild:
+    description: Opens the Guild Menu or runs a guild command.
+    usage: /guild [help]
+    permission: nsguildplus.use
+  gadmin:
+    description: NSGuildPlus admin commands.
+    usage: /gadmin <reload|stars|hideout|disband>
+    permission: nsguildplus.admin
+permissions:
+  nsguildplus.use: {default: true, description: Use the guild plugin}
+  nsguildplus.hideout.use: {default: true, description: Teleport to guild hideouts}
+  nsguildplus.hideout.set: {default: true, description: Set guild hideouts (Captain role is still required)}
+  nsguildplus.hideout.bypass: {default: op, description: Bypass hideout cooldown, cost and combat checks}
+  nsguildplus.enderchest: {default: true, description: Open the guild enderchest}
+  nsguildplus.settings: {default: true, description: Open guild settings}
+  nsguildplus.name.bypass-cost: {default: op, description: Rename the guild without paying}
+  nsguildplus.admin: {default: op, description: Admin commands}
+  nsguildplus.admin.hideout: {default: op, description: Admin hideout management}

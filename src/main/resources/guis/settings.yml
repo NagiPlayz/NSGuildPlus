@@ -1,0 +1,20 @@
+filler: GRAY_STAINED_GLASS_PANE
+sounds:
+  click: UI_BUTTON_CLICK
+  page: ITEM_BOOK_PAGE_TURN
+  error: ENTITY_VILLAGER_NO
+size: 9
+items:
+  back:
+    slot: 0
+    material: CREEPER_BANNER_PATTERN
+  name:
+    slot: 3
+    material: NAME_TAG
+  colour:
+    slot: 4
+    material: LIGHT_BLUE_DYE
+  friendly-fire:
+    slot: 5
+    material: RED_CONCRETE
+    material-off: LIME_CONCRETE

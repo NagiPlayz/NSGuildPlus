@@ -1,0 +1,14 @@
+# Allowed actions (GUI and logic) and visible /guild sub-commands per role.
+roles:
+  CAPTAIN:
+    permissions: [invite, kick, promote, demote, setvc, transfer, disband, set-hideout, delete-hideout, rename-hideout, move-hideout, change-name, change-colour, toggle-friendlyfire, form-alliance, revoke-alliance, view-mailbox, use-hideout, use-enderchest, buy-style, view-settings]
+    commands: [help, leave, disband, invite, kick, promote, demote, setvc, transfer, info, stats, leaderboard, settings, rename, colour, friendlyfire, ally, unally, allychat, mailbox, enderchest, shop, stars, hideout, sethideout, delhideout, renamehideout, movehideout]
+  VICE_CAPTAIN:
+    permissions: [invite, kick, view-mailbox, use-hideout, use-enderchest, view-settings]
+    commands: [help, leave, invite, kick, info, stats, leaderboard, settings, allychat, mailbox, enderchest, shop, stars, hideout]
+  OFFICER:
+    permissions: [invite, view-mailbox, use-hideout, use-enderchest, view-settings]
+    commands: [help, leave, invite, info, stats, leaderboard, settings, allychat, mailbox, enderchest, shop, stars, hideout]
+  MEMBER:
+    permissions: [use-hideout, use-enderchest, view-settings]
+    commands: [help, leave, info, stats, leaderboard, settings, allychat, enderchest, shop, stars, hideout]

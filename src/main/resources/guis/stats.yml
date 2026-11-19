@@ -1,0 +1,34 @@
+filler: GRAY_STAINED_GLASS_PANE
+sounds:
+  click: UI_BUTTON_CLICK
+  page: ITEM_BOOK_PAGE_TURN
+  error: ENTITY_VILLAGER_NO
+size: 27
+items:
+  level:
+    slot: 3
+    material: LECTERN
+  wealth:
+    slot: 4
+    material: GOLD_INGOT
+  playtime:
+    slot: 5
+    material: CLOCK
+  kills:
+    slot: 11
+    material: DIAMOND_SWORD
+  deaths:
+    slot: 12
+    material: DIAMOND_HELMET
+  mobs:
+    slot: 13
+    material: IRON_SWORD
+  placed:
+    slot: 14
+    material: COARSE_DIRT
+  mined:
+    slot: 15
+    material: DIAMOND_PICKAXE
+  back:
+    slot: 22
+    material: CREEPER_BANNER_PATTERN

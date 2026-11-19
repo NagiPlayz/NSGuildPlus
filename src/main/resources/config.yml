@@ -1,0 +1,293 @@
+# NSGuildPlus 1.0 - main configuration
+message-format: LEGACY_AMPERSAND   # LEGACY_AMPERSAND | LEGACY_SECTION | MINIMESSAGE | AUTO
+language: en                       # optional extra file lang/<code>.yml overrides lang.yml
+
+guild:
+  max-members: 50
+  auto-promote-oldest-member: true
+  # Level 1 is the start. A guild reaches the level when its total Power Score is at least the number.
+  level-thresholds: {2: 1000, 3: 5000, 4: 15000, 5: 30000, 6: 50000}
+  power-factors:
+    kills: 10
+    deaths: -5
+    money: 0.001
+    achievements: 25
+  stars:
+    kills: 5
+    deaths: -2
+    achievements: 10
+    notify: true
+
+ranks:
+  1: {name: "Sovereign / Mythic", score: 10000, description: "Ultimate Guild Legend"}
+  2: {name: "Titan / Conqueror", score: 4000, description: "Heavy power and high earner"}
+  3: {name: "Gladiator / Warlord", score: 1500, description: "Experienced PvP and active earner"}
+  4: {name: "Vanguard / Slayer", score: 500, description: "Frontline fighter"}
+  5: {name: "Recruit / Novice", score: 0, description: "New member"}
+
+leaderboard:
+  annual-cycle-days: 365
+
+hideout:
+  enabled: true
+  max-hideouts-per-guild: 3
+  scale-with-guild-level:
+    enabled: true
+    levels: {1: 1, 3: 2, 5: 3}
+  who-can-teleport: MEMBER        # MEMBER, VICE_CAPTAIN, CAPTAIN
+  name:
+    min-length: 3
+    max-length: 16
+    regex: "^[a-zA-Z0-9_]+$"
+  teleport:
+    delay-seconds: 3
+    cooldown-seconds: 60
+    cancel-on-move: true
+    cancel-on-damage: true
+    cancel-on-combat: true
+    cancel-on-inventory-open: true
+    combat-seconds: 15
+    cost: 0.0
+    safe-teleport: true
+    allow-cross-world: true
+    disabled-worlds: ["world_the_end"]
+    bypass-permission: "nsguildplus.hideout.bypass"
+  effects:
+    countdown-display: TITLE      # TITLE, ACTIONBAR, CHAT, BOSSBAR, NONE
+    countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+    teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+    teleport-particle: "PORTAL"
+  gui:
+    size: 36
+    item-material: "RED_BED"
+    set-button-material: "NETHER_STAR"
+
+settings:
+  who-can-change: CAPTAIN
+  name:
+    min-length: 3
+    max-length: 12
+    regex: "^[a-zA-Z0-9_]+$"
+    allow-colours: false
+    free-changes: 1            # first change free after guild creation
+    cost: 500                  # Guild Stars taken from the guild from the 2nd change on
+    cancel-word: "cancel"
+    input-timeout-seconds: 30
+  colour:
+    slots-per-page: 27
+  friendly-fire:
+    default: false
+    who-can-toggle: CAPTAIN
+
+shop:
+  default-owned: ["white"]
+  default-style: "white"
+  styles:
+    white:
+      category: BASIC
+      price: 0
+      enabled: true
+      permission: ""
+      code: "&f"
+      material: "WHITE_CONCRETE"
+    gray:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&7"
+      material: "LIGHT_GRAY_CONCRETE"
+    dark_gray:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&8"
+      material: "GRAY_CONCRETE"
+    red:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&c"
+      material: "RED_CONCRETE"
+    dark_red:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&4"
+      material: "RED_TERRACOTTA"
+    gold:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&6"
+      material: "ORANGE_CONCRETE"
+    yellow:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&e"
+      material: "YELLOW_CONCRETE"
+    green:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&a"
+      material: "LIME_CONCRETE"
+    dark_green:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&2"
+      material: "GREEN_CONCRETE"
+    aqua:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&b"
+      material: "LIGHT_BLUE_CONCRETE"
+    dark_aqua:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&3"
+      material: "CYAN_CONCRETE"
+    blue:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&9"
+      material: "BLUE_CONCRETE"
+    light_purple:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&d"
+      material: "PINK_CONCRETE"
+    dark_purple:
+      category: BASIC
+      price: 100
+      enabled: true
+      permission: ""
+      code: "&5"
+      material: "PURPLE_CONCRETE"
+    crimson:
+      category: PREMIUM
+      price: 750
+      enabled: true
+      permission: ""
+      code: "&#DC143C&l"
+      material: "RED_TERRACOTTA"
+    amber:
+      category: PREMIUM
+      price: 750
+      enabled: true
+      permission: ""
+      code: "&#FFBF00&l"
+      material: "ORANGE_TERRACOTTA"
+    lime_glow:
+      category: PREMIUM
+      price: 750
+      enabled: true
+      permission: ""
+      code: "&#C8FF2E&l"
+      material: "LIME_TERRACOTTA"
+    emerald:
+      category: PREMIUM
+      price: 750
+      enabled: true
+      permission: ""
+      code: "&#50C878&l"
+      material: "GREEN_TERRACOTTA"
+    azure:
+      category: PREMIUM
+      price: 750
+      enabled: true
+      permission: ""
+      code: "&#007FFF&l"
+      material: "LIGHT_BLUE_TERRACOTTA"
+    violet:
+      category: PREMIUM
+      price: 750
+      enabled: true
+      permission: ""
+      code: "&#8F00FF&l"
+      material: "PURPLE_TERRACOTTA"
+    rose:
+      category: PREMIUM
+      price: 750
+      enabled: true
+      permission: ""
+      code: "&#FF66B2&l"
+      material: "PINK_TERRACOTTA"
+    ocean_gradient:
+      category: GRADIENT
+      price: 1500
+      enabled: true
+      permission: ""
+      code: "<gradient:#00C6FF:#0072FF>"
+      material: "LIGHT_BLUE_GLAZED_TERRACOTTA"
+    sunset_gradient:
+      category: GRADIENT
+      price: 1500
+      enabled: true
+      permission: ""
+      code: "<gradient:#FF512F:#F09819>"
+      material: "ORANGE_GLAZED_TERRACOTTA"
+    forest_gradient:
+      category: GRADIENT
+      price: 1500
+      enabled: true
+      permission: ""
+      code: "<gradient:#11998E:#38EF7D>"
+      material: "GREEN_GLAZED_TERRACOTTA"
+    aurora_gradient:
+      category: GRADIENT
+      price: 1500
+      enabled: true
+      permission: ""
+      code: "<gradient:#00F260:#0575E6>"
+      material: "CYAN_GLAZED_TERRACOTTA"
+    fire_gradient:
+      category: GRADIENT
+      price: 1500
+      enabled: true
+      permission: ""
+      code: "<gradient:#F12711:#F5AF19>"
+      material: "RED_GLAZED_TERRACOTTA"
+    ice_gradient:
+      category: GRADIENT
+      price: 1500
+      enabled: true
+      permission: ""
+      code: "<gradient:#E0EAFC:#CFDEF3>"
+      material: "WHITE_GLAZED_TERRACOTTA"
+    royal_gradient:
+      category: GRADIENT
+      price: 1500
+      enabled: true
+      permission: ""
+      code: "<gradient:#8E2DE2:#4A00E0>"
+      material: "PURPLE_GLAZED_TERRACOTTA"
+
+enderchest:
+  enabled: true
+  rows: 4
+
+allies:
+  max: 5
+
+placeholders:
+  no-guild: "None"
+  empty: "-"
+  number-format: COMMAS           # COMMAS | SHORT | PLAIN

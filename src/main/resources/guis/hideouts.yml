@@ -1,0 +1,24 @@
+filler: GRAY_STAINED_GLASS_PANE
+sounds:
+  click: UI_BUTTON_CLICK
+  page: ITEM_BOOK_PAGE_TURN
+  error: ENTITY_VILLAGER_NO
+size: 36
+content-start: 9
+per-page: 18
+items:
+  prev:
+    slot: 27
+    material: ARROW
+  back:
+    slot: 4
+    material: CREEPER_BANNER_PATTERN
+  next:
+    slot: 35
+    material: ARROW
+  hideout:
+    slot: 0
+    material: RED_BED
+  set:
+    slot: 31
+    material: NETHER_STAR
